@@ -6,7 +6,7 @@
 				return $edad + 10;
 			}
 
-		if ($_GET["edad"] > 58 ) {
+		if (edad_en_10_años($_GET["edad"]) > 65 ) {
 			echo "En 10 años tendras edad de jubilacion";
 		} else {
 		echo "!disfruta de tu tiempo !";
