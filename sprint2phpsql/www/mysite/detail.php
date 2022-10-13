@@ -32,6 +32,12 @@ echo '</table>';
 	while ($row = mysqli_fetch_array($result2)) {
 		echo '<li>'.$row['comentario'].'</li>';
 }
+<p>Deja un nuevo comentario:</p>
+<form action="/comment.php" method="post">
+<textarea rows="4" cols="50" name="new_comment"></textarea><br>
+<input type="hidden" name="cancion_id" value="<?php echo $cancion_id; ?>">
+<input type="submit" value="Comentar">
+</form>
 
 mysqli_close($db);
 ?>
