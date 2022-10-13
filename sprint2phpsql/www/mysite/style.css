@@ -1,0 +1,12 @@
+table {
+	border-collapse: collapse;
+}
+#id1 {
+	background: black;
+	color: red;
+}
+th {
+	background: #DAE211;
+	color: white;
+	font-style: italic;
+}

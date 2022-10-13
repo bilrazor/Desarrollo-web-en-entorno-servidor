@@ -11,8 +11,14 @@ $pelicula_id = $_GET['pelicula_id'];
 $query =  'select * from tPeliculas where id='.$pelicula_id;
 $result = mysqli_query($db, $query) or die('Query error');
 $only_row = mysqli_fetch_array($result);
-echo '<h1>'.$only_row['titulo'].'</h1>';
-echo '<h2>'.$only_row['año'].'</h2>';
+echo '<table boder="1">'
+echo '<tr>'
+echo	'<th>ID .$pelicula_id seleccionado</th>'
+echo  '</tr>'
+echo '</table>'
+
+echo '<h1>'.$only_row['nombre'].'</h1>';
+echo '<h2>'.$only_row['genero'].'</h2>';
 ?>
 <h3>Comentarios:</h3>
 <ul>
@@ -22,6 +28,7 @@ echo '<h2>'.$only_row['año'].'</h2>';
 	while ($row = mysqli_fetch_array($result2)) {
 		echo '<li>'.$row['comentario'].'</li>';
 }
+
 mysqli_close($db);
 ?>
 </ul>

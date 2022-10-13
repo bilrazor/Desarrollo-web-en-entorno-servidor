@@ -2,16 +2,19 @@
 	$db = mysqli_connect('localhost','root','1234','mysitedb') or die ('fail');
 ?>
 <html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
 <?php
 echo'<h1 align="center"> Conexion establecida </h1>';
 echo '<table border="1" align="center">';
 echo '<tr>';
-echo	'<th>ID</th>';
-echo   	'<th>NOMBRE</th>';
-echo   	'<th>ULR_IMAGEN</th>';
-echo   	'<th>GENERO</th>';
-echo	'<th>AÑO_ESTRENO</th>';
+echo	'<th id=id1>ID</th>';
+echo   	'<th id=id1>NOMBRE</th>';
+echo   	'<th id=id1>ULR_IMAGEN</th>';
+echo   	'<th id=id1>GENERO</th>';
+echo	'<th id=id1>AÑO_ESTRENO</th>';
 echo '</tr>';
 
 
