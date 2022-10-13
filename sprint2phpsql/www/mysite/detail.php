@@ -11,14 +11,13 @@ $pelicula_id = $_GET['pelicula_id'];
 $query =  'select * from tPeliculas where id='.$pelicula_id;
 $result = mysqli_query($db, $query) or die('Query error');
 $only_row = mysqli_fetch_array($result);
-echo '<table boder="1">'
-echo '<tr>'
-echo	'<th>ID .$pelicula_id seleccionado</th>'
-echo  '</tr>'
-echo '</table>'
 
+echo '<h1>'.$only_row['id'].'</h1>';
 echo '<h1>'.$only_row['nombre'].'</h1>';
-echo '<h2>'.$only_row['genero'].'</h2>';
+echo '<h1>'.$only_row['genero'].'</h1>';
+?> <img src="<?php echo $only_row['url_imagen']?>" width="100" hight="100"/>;<?php
+
+
 ?>
 <h3>Comentarios:</h3>
 <ul>
