@@ -2,6 +2,8 @@
 	$db = mysqli_connect ('localhost','root','1234','mysitedb') or die ('Fail');
 ?>
 <html>
+<head>
+<link rel="stylesheet" href="style.css">
 	<body>
 	<?php
 	if (!isset($_GET['pelicula_id'])) {
