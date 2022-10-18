@@ -2,7 +2,7 @@ print("Si pepe compra 10 manzanas y reparte 8, cuanto mide el sol contesta con l
 
 print("a)696.340 km")
 print("b)599.340 km")
-print("a)352.340 manzanas")
+print("c)352.340 manzanas")
 
 opcion=input("escribe tu respuesta: ")
 
