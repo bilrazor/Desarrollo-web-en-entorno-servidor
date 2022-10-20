@@ -11,9 +11,9 @@ session_start();
 $_SESSION['user_id'] = $only_row[0];
 header('Location: main.php');
 } else {
-echo '<p>Contraseña incorrecta</p>';
+echo '<p>Contraseña incorrecta :(</p>';
 }
 } else {
-echo '<p>Usuario no encontrado con ese email</p>';
+echo '<p>Usuario no encontrado con ese email :(</p>';
 }
 ?>
