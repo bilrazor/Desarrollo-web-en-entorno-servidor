@@ -29,10 +29,10 @@ echo '</table>';
 <h3>Comentarios:</h3>
 <ul>
 	<?php
-	$query2 ='SELECT * FROM tComentarios WHERE pelicula_id='.$pelicula_id;
+	$query2 ='SELECT * FROM tComentarios c join tUsuarios u on u.id=c.usuario_id WHERE c.pelicula_id='.$pelicula_id;
 	$result2 = mysqli_query($db, $query2) or die ('Query error');
 	while ($row = mysqli_fetch_array($result2)) {
-		echo '<li>'.$row['comentario'].' '.$row['fecha'];'</li>';		
+		echo '<li>'.$row['nombre'].' : '.$row['comentario'].' '.$row['fecha'];'</li>';		
 }
 mysqli_close($db);
 ?>

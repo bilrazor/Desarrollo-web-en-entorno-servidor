@@ -36,7 +36,7 @@ echo '</tr>';
 		echo '<br>';
 	echo	'</th>';
 	echo   	'<th>';
-		?><a href="http://localhost:8083/detail.php?pelicula_id=<?php echo $row[0] ?>">
+		?><a href="/detail.php?pelicula_id=<?php echo $row[0] ?>">
 		 <img src="<?php echo $row[2] ?>" width='100' height='100' /></a>;<?php
 		echo '<br>';
 		
