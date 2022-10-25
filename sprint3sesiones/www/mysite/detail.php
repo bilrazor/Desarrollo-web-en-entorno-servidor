@@ -3,8 +3,10 @@
 ?>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
+</head>
 	<body>
+<p align="right"><a href="/logout.php">logout</a></p>
 	<?php
 	if (!isset($_GET['pelicula_id'])) {
 		die('No se  ha especificado una pelicula');

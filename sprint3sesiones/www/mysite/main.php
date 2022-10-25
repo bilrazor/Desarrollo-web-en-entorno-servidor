@@ -8,6 +8,7 @@
 <body>
 <?php
 echo'<h1 align="center"> Conexion establecida </h1>';
+echo '<p align="right"><a href="/logout.php">Logout</a></p>';
 echo '<table border="1" align="center">';
 echo '<tr>';
 echo	'<th id=id1>ID</th>';
