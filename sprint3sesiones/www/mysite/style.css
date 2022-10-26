@@ -3,10 +3,15 @@ table {
 }
 #id1 {
 	background: black;
-	color: red;
+	color: yellow;
 }
 th {
 	background: #DAE211;
 	color: white;
 	font-style: italic;
+}
+
+body{
+	background-color:black ;
+
 }

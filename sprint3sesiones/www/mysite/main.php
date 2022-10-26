@@ -3,14 +3,51 @@
 ?>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<style>
+	body{
+		
+		background-image: url(https://www.nicepng.com/png/detail/432-4327221_pelicula-cine-png-peliculas-de-cine.png);
+}
+
+#id1 {
+	color:red;
+}
+th {
+	color:white;
+	background-color:#DAC1EO;
+}
+
+.transition {
+	transition:width 2s, height 2s, margin 2s;
+}
+.transition:hover {
+	width:200px;
+	height:200px;
+	margin: 0 auto;
+}
+.transition2{
+	transition:width 2s.height 2s, margin 2s;
+}
+.transition2:hover {
+	background-color: yellow;
+	font-weight : bold;
+}
+
+table {
+	background-color:black;
+}
+
+
+
+
+</style>
 </head>
 <body>
 <?php
-echo'<h1 align="center"> Conexion establecida </h1>';
+echo'<h1 align="center"> TUS PELICULAS ONLINE </h1>';
 echo '<p align="right"><a href="/logout.php">Logout</a></p>';
 echo '<table border="1" align="center">';
-echo '<tr>';
+echo '<tr class="transition2">';
 echo	'<th id=id1>ID</th>';
 echo   	'<th id=id1>NOMBRE</th>';
 echo   	'<th id=id1>ULR_IMAGEN</th>';
@@ -36,9 +73,9 @@ echo '</tr>';
 		echo $row['nombre'];
 		echo '<br>';
 	echo	'</th>';
-	echo   	'<th>';
+	echo   	'<th class="transition">';
 		?><a href="/detail.php?pelicula_id=<?php echo $row[0] ?>">
-		 <img src="<?php echo $row[2] ?>" width='100' height='100' /></a>;<?php
+		 <img class="transition" src="<?php echo $row[2] ?>" width='100' height='100' /></a>;<?php
 		echo '<br>';
 		
 	echo	'</th>';
