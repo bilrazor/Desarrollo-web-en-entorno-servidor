@@ -46,6 +46,7 @@ table {
 <?php
 echo'<h1 align="center"> TUS PELICULAS ONLINE </h1>';
 echo '<p align="right"><a href="/logout.php">Logout</a></p>';
+echo '<p align="right"><a href="/contraseña.html">Cambiar Contraseña</a></p>';
 echo '<table border="1" align="center">';
 echo '<tr class="transition2">';
 echo	'<th id=id1>ID</th>';
