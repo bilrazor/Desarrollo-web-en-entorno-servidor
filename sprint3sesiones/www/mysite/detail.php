@@ -2,9 +2,16 @@
 	$db = mysqli_connect ('localhost','root','1234','mysitedb') or die ('Fail');
 ?>
 <html>
-<head>
-	<link rel="stylesheet" href="style.css">
-</head>
+<style>
+body{	
+	background-image: url(https://www.nicepng.com/png/detail/432-4327221_pelicula-cine-png-peliculas-de-cine.png);
+	font-weight:900;
+}
+th{
+color: red;
+}
+
+</style>
 	<body>
 <p align="right"><a href="/logout.php">logout</a></p>
 	<?php

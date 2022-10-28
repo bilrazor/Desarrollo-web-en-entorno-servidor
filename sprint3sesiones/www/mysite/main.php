@@ -6,6 +6,7 @@
 <style>
 	body{
 		
+		font-weight:900;
 		background-image: url(https://www.nicepng.com/png/detail/432-4327221_pelicula-cine-png-peliculas-de-cine.png);
 }
 
