@@ -54,6 +54,10 @@ p {
 <?php
 session_start();
 echo '<h1 align="center" >Tus peliculas Online </h1>';
+echo '<form action="search.php" method="post">';
+echo 	'<input name="f_search" type="text" placeholder="search">';
+echo 	'<input type="submit" value="Buscar"';
+echo '</form>';
 if (isset($_SESSION['user_id'])) {
 echo '<p align="right">Estas logeado</p>';
 echo '<p align="right"><a class="log" href="/logout.php">Logout</a></p>';
