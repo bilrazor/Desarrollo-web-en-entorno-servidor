@@ -70,6 +70,7 @@ if (isset($_SESSION['user_id'])) {
 echo '<p align="right">Estas logeado</p>';
 echo '<p align="right"><a class="log" href="/logout.php">Logout</a></p>';
 echo '<p align="right"><a href="/contraseña.html">Cambiar Contraseña</a></p>';
+echo '<p align="right"><a href="/favorites.php">Favoritos</a></p>';
 }else{
 echo '<p align="right">No estas logeado</p>';
 echo '<p align="right"><a class="inlog" href="/logout.php">Logout</a></p>';
