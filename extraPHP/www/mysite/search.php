@@ -19,6 +19,12 @@ while ($row = mysqli_fetch_array($result)) {
 	echo $row[1];
 	echo '<br>';
 	echo $row[3];
+?>
+	<form action="/do_add_favorite.php"  method="post">
+		<input type="hidden" name="pelicula_id" value="<?php echo $row[0]; ?>">
+		<input type="submit">
+   	</form>
+<?php
 
 }
 echo '<br>';
