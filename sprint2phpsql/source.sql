@@ -33,7 +33,7 @@ CREATE TABLE `tComentarios` (
   KEY `pelicula_id` (`pelicula_id`),
   CONSTRAINT `tComentarios_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `tUsuarios` (`id`),
   CONSTRAINT `tComentarios_ibfk_2` FOREIGN KEY (`pelicula_id`) REFERENCES `tPeliculas` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,8 +42,37 @@ CREATE TABLE `tComentarios` (
 
 LOCK TABLES `tComentarios` WRITE;
 /*!40000 ALTER TABLE `tComentarios` DISABLE KEYS */;
-INSERT INTO `tComentarios` VALUES (2,'una pelicula fantastica sin igual me ha dehado maravillado',1,1,'2022-10-29 09:58:13'),(3,'unos efectos magnificos y la historia no esta mal ',2,2,'2022-10-29 09:58:13'),(4,'de miedo , no pude dormir la verdad recomendadicima ',3,3,'2022-10-29 09:58:13'),(5,'la historia te engancha no puedes parar de verla ',4,4,'2022-10-29 09:58:13'),(6,'me rei muchisimo ',5,5,'2022-10-29 09:58:13'),(7,'dfa',1,2,'2022-10-29 09:58:26'),(8,'dads',1,2,'2022-10-29 09:58:31'),(9,'dads',1,2,'2022-10-29 09:58:34');
+INSERT INTO `tComentarios` VALUES (2,'una pelicula fantastica sin igual me ha dehado maravillado',1,1,'2022-10-29 09:58:13'),(3,'unos efectos magnificos y la historia no esta mal ',2,2,'2022-10-29 09:58:13'),(4,'de miedo , no pude dormir la verdad recomendadicima ',3,3,'2022-10-29 09:58:13'),(5,'la historia te engancha no puedes parar de verla ',4,4,'2022-10-29 09:58:13'),(6,'me rei muchisimo ',5,5,'2022-10-29 09:58:13'),(7,'dfa',1,2,'2022-10-29 09:58:26'),(8,'dads',1,2,'2022-10-29 09:58:31'),(9,'dads',1,2,'2022-10-29 09:58:34'),(10,'la ange loca',1,2,'2022-10-30 15:16:52');
 /*!40000 ALTER TABLE `tComentarios` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tFavoritos`
+--
+
+DROP TABLE IF EXISTS `tFavoritos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tFavoritos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `idPelicula` int(11) NOT NULL,
+  `idUsuario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `idPelicula` (`idPelicula`),
+  KEY `idUsuario` (`idUsuario`),
+  CONSTRAINT `tFavoritos_ibfk_1` FOREIGN KEY (`idPelicula`) REFERENCES `tPeliculas` (`id`),
+  CONSTRAINT `tFavoritos_ibfk_2` FOREIGN KEY (`idUsuario`) REFERENCES `tUsuarios` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tFavoritos`
+--
+
+LOCK TABLES `tFavoritos` WRITE;
+/*!40000 ALTER TABLE `tFavoritos` DISABLE KEYS */;
+INSERT INTO `tFavoritos` VALUES (1,3,2),(2,2,2),(3,4,2),(4,5,2);
+/*!40000 ALTER TABLE `tFavoritos` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -110,4 +139,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-29 12:12:07
+-- Dump completed on 2022-11-03 21:32:28
