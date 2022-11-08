@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('test',views.pagina_de_prueba),
     path('peliculas',views.devolver_peliculas)
+    path('canciones/<int:id_solicitado>',views.devolver_cancion_por_id)
 
 ]
