@@ -22,7 +22,7 @@ def devolver_peliculas(request):
 		respuesta_final.append(diccionario)
 	return JsonResponse(respuesta_final, safe=False);
 		
-def devolver_peliculas_por_id(request, id_solicitado):
+def devolver_pelicula_por_id(request, id_solicitado):
 	pelicula = Tpeliculas.objects.all()
 	comentarios = cancion.tcomentarios_set.all()
 	lista_comentarios = []
@@ -38,8 +38,8 @@ def devolver_peliculas_por_id(request, id_solicitado):
 		'nombre':pelicula.nombre,
 		'url_imagen':pelicula.url_imagen,
 		'genero':pelicula.genero,
-		'año_estreno':pelicula..año_estreno,
+		'año_estreno':pelicula.año_estreno,
 		'comentarios':lista_comentarios
-		
-	return JsonResponse(resultado, json_dumps_params={'ensure_ascill':False});
+	}
+	return JsonResponse(resultado, json_dumps_params={'ensure_ascii':False});
 		
