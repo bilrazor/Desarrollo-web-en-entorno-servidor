@@ -23,8 +23,8 @@ def devolver_peliculas(request):
 	return JsonResponse(respuesta_final, safe=False);
 		
 def devolver_pelicula_por_id(request, id_solicitado):
-	pelicula = Tpeliculas.objects.all()
-	comentarios = cancion.tcomentarios_set.all()
+	pelicula = Tpeliculas.objects.get(id=id_solicitado)
+	comentarios = pelicula.tcomentarios_set.all()
 	lista_comentarios = []
 	
 	for fila_comentario_sql in comentarios:
