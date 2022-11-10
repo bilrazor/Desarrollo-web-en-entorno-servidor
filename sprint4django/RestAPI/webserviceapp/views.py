@@ -45,7 +45,7 @@ def devolver_pelicula_por_id(request, id_solicitado):
 		'comentarios':lista_comentarios
 	}
 	return JsonResponse(resultado, json_dumps_params={'ensure_ascii':False});
-
+@csrf_exempt
 def guardar_comentario(request, pelicula_id):
     if request.method != 'POST':
             return None
