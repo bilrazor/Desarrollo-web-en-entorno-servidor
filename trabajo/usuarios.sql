@@ -14,11 +14,11 @@ create table Usuario (
     contraseña varchar(9) not null
 );
 
-insert into Restaurante (id,nombre,descripcion,direccion)  values("tortilla","un plato muy bueno","calle la paz");
-insert into Restaurante (id,nombre,descripcion,direccion)  values("mariscos","un plato muy esqusito","calle jsuticia");
-insert into Restaurante (id,nombre,descripcion,direccion)  values("tortilla","un plato muy bueno","calle gomez");
+insert into Restaurante (id,nombre,descripcion,direccion)  VALUES("tortilla","un plato muy bueno","calle la paz");
+insert into Restaurante (id,nombre,descripcion,direccion)  VALUES("mariscos","un plato muy esqusito","calle jsuticia");
+insert into Restaurante (id,nombre,descripcion,direccion)   VALUES("tortilla","un plato muy bueno","calle gomez");
 
 
-insert into Usuario (id,nombre, email,contraseña) values("martin","martin@gmail.com","pepapig");
-insert into Usuario (id,nombre, email,contraseña) values("pepe","pepe@gmail.com","pepapig");
-insert into Usuario (id,nombre, email,contraseña) values("carl","carl@gmail.com","pepapig");
+insert into Usuario (id,nombre, email,contraseña)  VALUES("martin","martin@gmail.com","pepapig");
+insert into Usuario (id,nombre, email,contraseña)  VALUES("pepe","pepe@gmail.com","pepapig");
+insert into Usuario (id,nombre, email,contraseña)  VALUES("carl","carl@gmail.com","pepapig");
