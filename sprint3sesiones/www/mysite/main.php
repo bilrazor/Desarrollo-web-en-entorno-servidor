@@ -11,7 +11,7 @@
 }
 
 #id1 {
-	color:red;
+	color:green;
 }
 th {
 	color:white;
