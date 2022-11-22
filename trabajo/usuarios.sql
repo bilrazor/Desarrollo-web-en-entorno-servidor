@@ -19,6 +19,6 @@ insert into Restaurante (id,nombre,descripcion,direccion)  values("mariscos","un
 insert into Restaurante (id,nombre,descripcion,direccion)  values("tortilla","un plato muy bueno","calle gomez");
 
 
-insert into Usuario (id,nombre, email,contraseña) values("martin","martin@gmail.com","1234");
-insert into Usuario (id,nombre, email,contraseña) values("pepe","pepe@gmail.com","1234");
-insert into Usuario (id,nombre, email,contraseña) values("carl","carl@gmail.com","1234");
+insert into Usuario (id,nombre, email,contraseña) values("martin","martin@gmail.com","pepapig");
+insert into Usuario (id,nombre, email,contraseña) values("pepe","pepe@gmail.com","pepapig");
+insert into Usuario (id,nombre, email,contraseña) values("carl","carl@gmail.com","pepapig");
