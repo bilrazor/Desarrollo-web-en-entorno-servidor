@@ -10,7 +10,7 @@ create table Restaurante(
 create table Usuario (
     id integer primary key auto_increment,
     nombre varchar(30) not null,
-    email varchar(30) not null unique,
+    email varchar(100) not null,
     contraseña varchar(9) not null
 );
 
