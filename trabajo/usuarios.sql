@@ -1,5 +1,5 @@
 create database restauracion;
-use database restauracion;
+use restauracion;
 create table Restaurante(
     id int not null auto_increment,
     nombre varchar(30) not null,
