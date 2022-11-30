@@ -1,0 +1,31 @@
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+<h1>Login</h1>
+<form  id="formulario" action="login.php" method="post">
+<input id="usuario" name="f_email" type="text" placeholder="e-mail"><br>
+<input id="clave" name="f_password" type="password" placeholder="Contraseña"><br>
+<input type="submit" value="Iniciar sesión">
+</form>
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+   document.getElementById("formulario").addEventListener('submit', validarFormulario); 
+});
+
+function validarFormulario(evento) {
+  evento.preventDefault();
+  var usuario = document.getElementById('usuario').value;
+  if(usuario.length == 0) {
+    alert('No has escrito nada en el usuario');
+    return;
+  }
+  var clave = document.getElementById('clave').value;
+  if (clave.length == 0) {
+    alert('La clave no es válida');
+    return;
+  }
+  this.submit();
+}
+  </script>
+</body>
+</html>
